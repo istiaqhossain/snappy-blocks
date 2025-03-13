@@ -1,0 +1,10 @@
+{
+	"name": "istiaqhossain/snappy-blocks",
+	"description": "The Snappy Blocks help build websites faster",
+	"type": "wordpress-plugin",
+	"autoload": {
+		"psr-4": {
+			"SnappyBlocks\\": "inc/"
+		}
+	}
+}
