@@ -12,13 +12,13 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+	exit;
 }
 
-/**
- * Block Initializer.
- */
-function snappy_blocks_snappy_blocks_block_init() {
-	// register_block_type( __DIR__ . '/build/snappy-blocks' );
+define('SNAPPY_BLOCKS_DIR', __DIR__);
+
+if (file_exists(SNAPPY_BLOCKS_DIR . '/vendor/autoload.php')) {
+    require_once SNAPPY_BLOCKS_DIR . '/vendor/autoload.php';
 }
-add_action( 'init', 'snappy_blocks_snappy_blocks_block_init' );
+
+SnappyBlocks\Plugin::get_instance();
