@@ -1,0 +1,177 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "snappy-blocks/advanced-heading",
+	"version": "0.1.0",
+	"title": "Advanced Heading",
+	"category": "snappy-blocks",
+	"icon": "smiley",
+	"description": "Create advanced heading with title, subtitle.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "snappy-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"blockId": {
+			"type": "string"
+		},
+		"titleTagName": {
+			"type": "string",
+			"default": "h2"
+		},
+		"titleText": {
+			"type": "string",
+			"default": "Snappy Blocks Advanced Heading"
+		},
+		"titleAlignment": {
+			"type": "string",
+			"default": "left"
+		},
+		"titleColor": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"titleMarginTop": {
+			"type": "number",
+			"default": 0
+		},
+		"titleMarginRight": {
+			"type": "number",
+			"default": 0
+		},
+		"titleMarginBottom": {
+			"type": "number",
+			"default": 0
+		},
+		"titleMarginLeft": {
+			"type": "number",
+			"default": 0
+		},
+		"titlePaddingTop": {
+			"type": "number",
+			"default": 0
+		},
+		"titlePaddingRight": {
+			"type": "number",
+			"default": 0
+		},
+		"titlePaddingBottom": {
+			"type": "number",
+			"default": 0
+		},
+		"titlePaddingLeft": {
+			"type": "number",
+			"default": 0
+		},
+		"displaySubTitle": {
+			"type": "boolean",
+			"default": false
+		},
+		"positionSubTitle": {
+			"type": "string",
+			"default": "below"
+		},
+		"subTitleTagName": {
+			"type": "string",
+			"default": "p"
+		},
+		"subTitleText": {
+			"type": "string",
+			"default": "Snappy Blocks Advanced Sub Heading"
+		},
+		"subTitleAlignment": {
+			"type": "string",
+			"default": "left"
+		},
+		"subTitleColor": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"subTitleMarginTop": {
+			"type": "number",
+			"default": 0
+		},
+		"subTitleMarginRight": {
+			"type": "number",
+			"default": 0
+		},
+		"subTitleMarginBottom": {
+			"type": "number",
+			"default": 0
+		},
+		"subTitleMarginLeft": {
+			"type": "number",
+			"default": 0
+		},
+		"subTitlePaddingTop": {
+			"type": "number",
+			"default": 0
+		},
+		"subTitlePaddingRight": {
+			"type": "number",
+			"default": 0
+		},
+		"subTitlePaddingBottom": {
+			"type": "number",
+			"default": 0
+		},
+		"subTitlePaddingLeft": {
+			"type": "number",
+			"default": 0
+		},
+		"bgColor": {
+			"type": "string",
+			"default": "transparent"
+		},
+		"bgImage": {
+			"type": "string"
+		},
+		"bgImageId": {
+			"type": "number"
+		},
+		"bgOverlayColor": {
+			"type": "string",
+			"default": "transparent"
+		},
+		"bgOverlayOpacity": {
+			"type": "number",
+			"default": 0.5
+		},
+		"wrapMarginTop": {
+			"type": "number",
+			"default": 0
+		},
+		"wrapMarginRight": {
+			"type": "number",
+			"default": 0
+		},
+		"wrapMarginBottom": {
+			"type": "number",
+			"default": 20
+		},
+		"wrapMarginLeft": {
+			"type": "number",
+			"default": 0
+		},
+		"wrapPaddingTop": {
+			"type": "number",
+			"default": 0
+		},
+		"wrapPaddingRight": {
+			"type": "number",
+			"default": 0
+		},
+		"wrapPaddingBottom": {
+			"type": "number",
+			"default": 0
+		},
+		"wrapPaddingLeft": {
+			"type": "number",
+			"default": 0
+		}
+	}
+}

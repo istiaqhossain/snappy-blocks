@@ -19,6 +19,6 @@ class Block {
     }
 
     public function register() {
-        // register_block_type(SNAPPY_BLOCKS_DIR . '/build/advanced-heading');
+        register_block_type(SNAPPY_BLOCKS_DIR . '/build/advanced-heading');
     }
 }
