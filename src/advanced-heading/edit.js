@@ -67,6 +67,9 @@ const Edit = (props) => {
 		wrapPaddingRight,
 		wrapPaddingBottom,
 		wrapPaddingLeft,
+		hideOnDesktop,
+		hideOnTab,
+		hideOnMobile,
 	} = attributes;
 
 	return (
@@ -987,6 +990,43 @@ const Edit = (props) => {
 														)}
 													</Button>
 												)}
+											</div>
+										</PanelBody>
+										<PanelBody
+											title={__("Responsive", "snappy-blocks")}
+											initialOpen={false}
+										>
+											<div className="py-4">
+												<ToggleControl
+													__nextHasNoMarginBottom={true}
+													label={__("Hide on Desktop", "snappy-blocks")}
+													checked={hideOnDesktop}
+													onChange={() => {
+														setAttributes({
+															hideOnDesktop: !hideOnDesktop,
+														});
+													}}
+												/>
+												<ToggleControl
+													__nextHasNoMarginBottom={true}
+													label={__("Hide on Tab", "snappy-blocks")}
+													checked={hideOnTab}
+													onChange={() => {
+														setAttributes({
+															hideOnTab: !hideOnTab,
+														});
+													}}
+												/>
+												<ToggleControl
+													__nextHasNoMarginBottom={true}
+													label={__("Hide on Mobile", "snappy-blocks")}
+													checked={hideOnMobile}
+													onChange={() => {
+														setAttributes({
+															hideOnMobile: !hideOnMobile,
+														});
+													}}
+												/>
 											</div>
 										</PanelBody>
 									</>

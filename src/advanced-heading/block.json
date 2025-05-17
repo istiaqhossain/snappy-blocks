@@ -172,6 +172,18 @@
 		"wrapPaddingLeft": {
 			"type": "number",
 			"default": 0
+		},
+		"hideOnDesktop": {
+			"type": "boolean",
+			"default": false
+		},
+		"hideOnTab": {
+			"type": "boolean",
+			"default": false
+		},
+		"hideOnMobile": {
+			"type": "boolean",
+			"default": false
 		}
 	}
 }

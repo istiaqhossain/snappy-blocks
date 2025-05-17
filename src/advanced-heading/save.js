@@ -42,13 +42,16 @@ const save = ({ attributes }) => {
 		wrapPaddingRight,
 		wrapPaddingBottom,
 		wrapPaddingLeft,
+		hideOnDesktop,
+		hideOnTab,
+		hideOnMobile,
 	} = attributes;
 
 	return (
 		<>
 			<style>
 				{`
-				#block-{blockId} .advanced-heading-wrap:before {
+				#block-${blockId} .advanced-heading-wrap:before {
 					content: '';
 					background-color: ${bgOverlayColor};
 					position: absolute;
@@ -59,6 +62,30 @@ const save = ({ attributes }) => {
 					opacity: ${bgOverlayOpacity};
 					z-index: -1;
 				}
+				`}
+				{hideOnDesktop &&
+					`
+					@media (min-width: 1025px) {
+						#block-${blockId} .advanced-heading-wrap {
+							display: none;
+						}	
+					}
+				`}
+				{hideOnTab &&
+					`
+					@media (min-width: 481px) and (max-width: 1024px) {
+						#block-${blockId} .advanced-heading-wrap {
+							display: none;
+						}	
+					}
+				`}
+				{hideOnMobile &&
+					`
+					@media (max-width: 480px) {
+						#block-${blockId} .advanced-heading-wrap {
+							display: none;
+						}	
+					}
 				`}
 			</style>
 			<div id={`block-${blockId}`} {...useBlockProps.save()}>
