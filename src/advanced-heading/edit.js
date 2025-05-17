@@ -73,7 +73,7 @@ const Edit = (props) => {
 		<>
 			<style>
 				{`
-				#block-{blockId} .advanced-heading-wrap:before {
+				#block-${blockId} .advanced-heading-wrap:before {
 					content: '';
 					background-color: ${bgOverlayColor};
 					position: absolute;
@@ -645,7 +645,7 @@ const Edit = (props) => {
 															onChange={(el) => {
 																setAttributes({
 																	subTitleMarginRight: parseInt(
-																		el.target.value,
+																		el.target.value
 																	),
 																});
 															}}
@@ -660,7 +660,7 @@ const Edit = (props) => {
 															onChange={(el) => {
 																setAttributes({
 																	subTitleMarginBottom: parseInt(
-																		el.target.value,
+																		el.target.value
 																	),
 																});
 															}}
@@ -706,7 +706,7 @@ const Edit = (props) => {
 															onChange={(el) => {
 																setAttributes({
 																	subTitlePaddingRight: parseInt(
-																		el.target.value,
+																		el.target.value
 																	),
 																});
 															}}
@@ -721,7 +721,7 @@ const Edit = (props) => {
 															onChange={(el) => {
 																setAttributes({
 																	subTitlePaddingBottom: parseInt(
-																		el.target.value,
+																		el.target.value
 																	),
 																});
 															}}
@@ -736,7 +736,7 @@ const Edit = (props) => {
 															onChange={(el) => {
 																setAttributes({
 																	subTitlePaddingLeft: parseInt(
-																		el.target.value,
+																		el.target.value
 																	),
 																});
 															}}
@@ -922,7 +922,7 @@ const Edit = (props) => {
 																	>
 																		{__(
 																			"Upload background image",
-																			"snappy-blocks",
+																			"snappy-blocks"
 																		)}
 																	</Button>
 																) : (
@@ -983,7 +983,7 @@ const Edit = (props) => {
 													>
 														{__(
 															"Remove background overlay color",
-															"snappy-blocks",
+															"snappy-blocks"
 														)}
 													</Button>
 												)}
